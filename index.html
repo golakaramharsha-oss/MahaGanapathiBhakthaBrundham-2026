@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Chaturthi 2026 - Maha Ganapathi Bhaktha Brundham</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff9e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Splash Screen Overlay */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff9e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: opacity 0.8s ease;
+        }
+
+        .splash-logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff9933;
+            animation: pulse 1.5s infinite;
+        }
+
+        .splash-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #cc3300;
+            margin-top: 20px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Main Content (Hidden Initially) */
+        #main-content {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 3px solid #ff9933;
+        }
+        .telugu-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #cc3300;
+            margin-top: 15px;
+        }
+        .english-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            margin-top: 5px;
+        }
+        .welcome-box {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .location-btn {
+            display: inline-block;
+            background-color: #ff9933;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .committee-section {
+            margin-top: 30px;
+        }
+        .committee-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .member-card {
+            background: white;
+            width: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .member-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 8px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="splash-screen">
+        <img src="logo.jpg" alt="Ganesha Logo" class="splash-logo">
+        <div class="splash-title">మహా గణపతి భక్త బృందం</div>
+    </div>
+
+    <div id="main-content">
+        <div class="container">
+            <img src="logo.jpg" alt="Ganesha Logo" class="logo">
+
+            <div class="telugu-title">మహా గణపతి భక్త బృందం</div>
+            <div class="english-title">MAHA GANAPATHI BHAKTHA BRUNDHAM</div>
+
+            <div class="welcome-box">
+                <h2>Welcome, Devotees</h2>
+                <p>Join us in celebrating the divine arrival of Lord Ganesha with devotion, unity and happiness. Let us come together to seek the blessings of Vighneshwara for peace, prosperity, and joy in our community.</p>
+            </div>
+
+            <div>
+                <a href="https://www.google.com/maps/search/?api=1&query=16.496729,80.660937" target="_blank" class="location-btn">
+                    📍 Karanam Gari Street, Patamata, Vijayawada
+                </a>
+            </div>
+
+            <div class="committee-section">
+                <h3>Committee Members</h3>
+                <div class="committee-grid">
+                    <div class="member-card">
+                        <div class="member-photo">Photo 1</div>
+                        <p style="font-size: 14px; margin: 5px 0;">Name 1</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">Photo 2</div>
+                        <p style="font-size: 14px; margin: 5px 0;">Name 2</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">Photo 3</div>
+                        <p style="font-size: 14px; margin: 5px 0;">Name 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            var splash = document.getElementById('splash-screen');
+            var main = document.getElementById('main-content');
+            
+            splash.style.opacity = '0';
+            setTimeout(function() {
+                splash.style.display = 'none';
+                main.style.opacity = '1';
+            }, 800); // Matches the fade-out speed
+        }, 2500); // 2500 milliseconds = 2.5 seconds
+    </script>
+
+</body>
+</html>
