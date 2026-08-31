@@ -130,6 +130,50 @@
             color: #777;
             font-size: 12px;
         }
+
+        /* Event Details Styles */
+        .events-section {
+            margin-top: 40px;
+        }
+        .event-card {
+            background: #ffffff;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid #cc3300;
+            text-align: left;
+        }
+        .event-card h4 {
+            margin: 0 0 5px 0;
+            color: #cc3300;
+            font-size: 18px;
+        }
+        .event-card p {
+            margin: 3px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff3cd;
+            border-radius: 10px;
+            border-top: 3px solid #ff9933;
+        }
+        .footer-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #cc3300;
+        }
+        .footer-org {
+            font-size: 16px;
+            color: #444;
+            margin-top: 5px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -174,6 +218,46 @@
                     </div>
                 </div>
             </div>
+
+            <div class="events-section">
+                <h2>EVENT DETAILS</h2>
+
+                <div class="event-card">
+                    <h4>Ganesh Agaman</h4>
+                    <p><strong>Date:</strong> 13 Sep 2026</p>
+                    <p><strong>Time:</strong> 6:00 PM</p>
+                </div>
+
+                <div class="event-card">
+                    <h4>Ganesh Chaturthi</h4>
+                    <p><strong>Date:</strong> 14 Sep 2026</p>
+                    <p><strong>Time:</strong> 6:00 AM</p>
+                </div>
+
+                <div class="event-card">
+                    <h4>Pooja Ceremony</h4>
+                    <p><strong>Date:</strong> 14 Sep 2026</p>
+                    <p><strong>Time:</strong> 9:00 AM</p>
+                </div>
+
+                <div class="event-card">
+                    <h4>Annadhanam</h4>
+                    <p><strong>Date:</strong> 18 Sep 2026</p>
+                    <p><strong>Time:</strong> 12:00 PM</p>
+                </div>
+
+                <div class="event-card">
+                    <h4>Ganesh Visarjan</h4>
+                    <p><strong>Date:</strong> 20 Sep 2026</p>
+                    <p><strong>Time:</strong> 5:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-title">Ganapathi Bappa Morya 🙏</div>
+                <div class="footer-org">Organized by<br>Maha Ganapathi Bhaktha Brundham</div>
+            </div>
+
         </div>
     </div>
 
@@ -186,8 +270,8 @@
             setTimeout(function() {
                 splash.style.display = 'none';
                 main.style.opacity = '1';
-            }, 800); // Matches the fade-out speed
-        }, 2500); // 2500 milliseconds = 2.5 seconds
+            }, 800); 
+        }, 2500); 
     </script>
 
 </body>
