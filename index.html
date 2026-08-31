@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh Chaturthi 2026 - Maha Ganapathi Bhaktha Brundham</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff9e6;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4a0e0e 0%, #2c0808 100%);
             color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         /* Splash Screen Overlay */
@@ -21,7 +23,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #fff9e6;
+            background-color: #2c0808;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -31,148 +33,247 @@
         }
 
         .splash-logo {
-            width: 180px;
-            height: 180px;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #ff9933;
+            border: 5px solid #ffd700;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
             animation: pulse 1.5s infinite;
         }
 
         .splash-title {
-            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            font-size: 26px;
             font-weight: bold;
-            color: #cc3300;
+            color: #ffd700;
             margin-top: 20px;
+            letter-spacing: 1px;
         }
 
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            50% { transform: scale(1.06); }
             100% { transform: scale(1); }
         }
 
-        /* Main Content (Hidden Initially) */
+        /* Main Content wrapper */
         #main-content {
             opacity: 0;
             transition: opacity 1s ease;
+            width: 100%;
+            max-width: 480px;
+            background: #fffdf5;
+            min-height: 100vh;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            border-left: 3px solid #ffd700;
+            border-right: 3px solid #ffd700;
         }
 
         .container {
-            max-width: 600px;
-            margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
+
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            margin-top: 20px;
-            border: 3px solid #ff9933;
+            margin-top: 10px;
+            border: 4px solid #b30000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
+
         .telugu-title {
             font-size: 26px;
             font-weight: bold;
-            color: #cc3300;
-            margin-top: 15px;
+            color: #b30000;
+            margin-top: 12px;
         }
+
         .english-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #555;
-            margin-top: 5px;
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #886300;
+            margin-top: 4px;
+            letter-spacing: 1.5px;
         }
+
+        /* Welcome Box with Om */
         .welcome-box {
-            background: #ffffff;
-            padding: 20px;
+            background: #fff8e1;
+            padding: 18px;
             margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            border: 1px solid #ffd700;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
         }
+
+        .om-symbol {
+            font-size: 32px;
+            color: #b30000;
+            margin-bottom: 5px;
+        }
+
+        .welcome-box h2 {
+            font-family: 'Cinzel', serif;
+            color: #b30000;
+            margin-top: 0;
+            font-size: 19px;
+        }
+
+        .welcome-box p {
+            color: #444;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Location Block */
+        .location-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #ffb74d;
+            margin-bottom: 20px;
+        }
+
+        .location-address {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 12px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
         .location-btn {
             display: inline-block;
-            background-color: #ff9933;
+            background-color: #b30000;
             color: white;
-            padding: 12px 25px;
+            padding: 10px 20px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 25px;
-            margin: 15px 0;
+            box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
+            font-size: 13px;
+            border: 1px solid #ffd700;
+        }
+
+        /* Interactive Sections Styling */
+        .interactive-card {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #ffd700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .toggle-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background 0.3s;
         }
-        .committee-section {
-            margin-top: 30px;
+
+        .toggle-btn:hover {
+            background-color: #800000;
         }
+
+        /* Hidden Content Sections */
+        .collapsible-content {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+        }
+
         .committee-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
+            gap: 10px;
         }
+
         .member-card {
             background: white;
-            width: 120px;
-            padding: 10px;
+            width: 90px;
+            padding: 6px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
         }
+
         .member-photo {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            background-color: #ddd;
-            margin: 0 auto 8px auto;
+            background-color: #eee;
+            margin: 0 auto 4px auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #777;
+            color: #888;
+            font-size: 10px;
+            border: 2px dashed #b30000;
+        }
+
+        /* Event Details Internal List */
+        .event-card {
+            background: white;
+            padding: 10px 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #b30000;
+        }
+
+        .event-card h4 {
+            margin: 0 0 3px 0;
+            color: #b30000;
+            font-size: 15px;
+        }
+
+        .event-card p {
+            margin: 2px 0;
+            color: #555;
             font-size: 12px;
         }
 
-        /* Event Details Styles */
-        .events-section {
-            margin-top: 40px;
-        }
-        .event-card {
-            background: #ffffff;
-            padding: 15px;
-            margin: 12px 0;
+        /* Footer Section */
+        .footer-section {
+            margin-top: 30px;
+            padding: 18px;
+            background-color: #b30000;
+            color: #ffd700;
             border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-            border-left: 5px solid #cc3300;
-            text-align: left;
-        }
-        .event-card h4 {
-            margin: 0 0 5px 0;
-            color: #cc3300;
-            font-size: 18px;
-        }
-        .event-card p {
-            margin: 3px 0;
-            color: #555;
-            font-size: 14px;
+            border-top: 3px solid #ffd700;
         }
 
-        /* Footer Styles */
-        .footer-section {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #fff3cd;
-            border-radius: 10px;
-            border-top: 3px solid #ff9933;
-        }
-        .footer-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #cc3300;
-        }
-        .footer-org {
+        .footer-event {
+            font-family: 'Cinzel', serif;
             font-size: 16px;
-            color: #444;
-            margin-top: 5px;
             font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .footer-title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .footer-org {
+            font-size: 13px;
+            margin-top: 4px;
+            color: #fff8e1;
         }
     </style>
 </head>
@@ -191,77 +292,77 @@
             <div class="english-title">MAHA GANAPATHI BHAKTHA BRUNDHAM</div>
 
             <div class="welcome-box">
+                <div class="om-symbol">ॐ</div>
                 <h2>Welcome, Devotees</h2>
                 <p>Join us in celebrating the divine arrival of Lord Ganesha with devotion, unity and happiness. Let us come together to seek the blessings of Vighneshwara for peace, prosperity, and joy in our community.</p>
             </div>
 
-            <div>
-                <a href="https://www.google.com/maps/search/?api=1&query=16.496729,80.660937" target="_blank" class="location-btn">
-                    📍 Karanam Gari Street, Patamata, Vijayawada
+            <div class="location-box">
+                <div class="location-address">
+                    📍 <strong>Karanam Gari Street, Patamata, Vijayawada - 520010</strong>
+                </div>
+                <a href="https://maps.google.com/?q=16.496729,80.660937" target="_blank" class="location-btn">
+                    🧭 Navigate to Location
                 </a>
             </div>
 
-            <div class="committee-section">
-                <h3>Committee Members</h3>
-                <div class="committee-grid">
-                    <div class="member-card">
-                        <div class="member-photo">Photo 1</div>
-                        <p style="font-size: 14px; margin: 5px 0;">Name 1</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-photo">Photo 2</div>
-                        <p style="font-size: 14px; margin: 5px 0;">Name 2</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-photo">Photo 3</div>
-                        <p style="font-size: 14px; margin: 5px 0;">Name 3</p>
+            <div class="interactive-card">
+                <button class="toggle-btn" onclick="toggleSection('committee-content')">👥 Committee Members</button>
+                <div id="committee-content" class="collapsible-content">
+                    <div class="committee-grid">
+                        <div class="member-card">
+                            <div class="member-photo">Photo 1</div>
+                            <p style="font-size: 11px; margin: 3px 0; font-weight: 500;">Name 1</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-photo">Photo 2</div>
+                            <p style="font-size: 11px; margin: 3px 0; font-weight: 500;">Name 2</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-photo">Photo 3</div>
+                            <p style="font-size: 11px; margin: 3px 0; font-weight: 500;">Name 3</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="events-section">
-                <h2>EVENT DETAILS</h2>
-
-                <div class="event-card">
-                    <h4>Ganesh Agaman</h4>
-                    <p><strong>Date:</strong> 13 Sep 2026</p>
-                    <p><strong>Time:</strong> 6:00 PM</p>
-                </div>
-
-                <div class="event-card">
-                    <h4>Ganesh Chaturthi</h4>
-                    <p><strong>Date:</strong> 14 Sep 2026</p>
-                    <p><strong>Time:</strong> 6:00 AM</p>
-                </div>
-
-                <div class="event-card">
-                    <h4>Pooja Ceremony</h4>
-                    <p><strong>Date:</strong> 14 Sep 2026</p>
-                    <p><strong>Time:</strong> 9:00 AM</p>
-                </div>
-
-                <div class="event-card">
-                    <h4>Annadhanam</h4>
-                    <p><strong>Date:</strong> 18 Sep 2026</p>
-                    <p><strong>Time:</strong> 12:00 PM</p>
-                </div>
-
-                <div class="event-card">
-                    <h4>Ganesh Visarjan</h4>
-                    <p><strong>Date:</strong> 20 Sep 2026</p>
-                    <p><strong>Time:</strong> 5:00 PM</p>
+            <div class="interactive-card">
+                <button class="toggle-btn" onclick="toggleSection('events-content')">📅 Event Details</button>
+                <div id="events-content" class="collapsible-content">
+                    <div class="event-card">
+                        <h4>Ganesh Agaman</h4>
+                        <p><strong>Date:</strong> 13 Sep 2026 | <strong>Time:</strong> 6:00 PM</p>
+                    </div>
+                    <div class="event-card">
+                        <h4>Ganesh Chaturthi</h4>
+                        <p><strong>Date:</strong> 14 Sep 2026 | <strong>Time:</strong> 6:00 AM</p>
+                    </div>
+                    <div class="event-card">
+                        <h4>Pooja Ceremony</h4>
+                        <p><strong>Date:</strong> 14 Sep 2026 | <strong>Time:</strong> 9:00 AM</p>
+                    </div>
+                    <div class="event-card">
+                        <h4>Annadhanam</h4>
+                        <p><strong>Date:</strong> 18 Sep 2026 | <strong>Time:</strong> 12:00 PM</p>
+                    </div>
+                    <div class="event-card">
+                        <h4>Ganesh Visarjan</h4>
+                        <p><strong>Date:</strong> 20 Sep 2026 | <strong>Time:</strong> 5:00 PM</p>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-section">
+                <div class="footer-event">Ganesh Chaturthi 2026</div>
                 <div class="footer-title">Ganapathi Bappa Morya 🙏</div>
-                <div class="footer-org">Organized by<br>Maha Ganapathi Bhaktha Brundham</div>
+                <div class="footer-org">Organized by Maha Ganapathi Bhaktha Brundham</div>
             </div>
 
         </div>
     </div>
 
     <script>
+        // Splash Screen Timer
         setTimeout(function() {
             var splash = document.getElementById('splash-screen');
             var main = document.getElementById('main-content');
@@ -272,6 +373,16 @@
                 main.style.opacity = '1';
             }, 800); 
         }, 2500); 
+
+        // Toggle Function for Interactive Blocks
+        function toggleSection(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
     </script>
 
 </body>
