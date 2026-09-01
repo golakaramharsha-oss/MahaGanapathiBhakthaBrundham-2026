@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh Chaturthi 2026 - Maha Ganapathi Bhaktha Brundham</title>
-    <!-- Importing elegant fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -196,33 +195,43 @@
         }
 
         .committee-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
         }
 
         .member-card {
             background: #2b0b1c;
-            width: 90px;
-            padding: 8px;
+            padding: 8px 4px;
             border-radius: 8px;
             border: 1px solid #55223c;
             text-align: center;
         }
 
         .member-photo {
-            width: 60px;
-            height: 60px;
+            width: 65px;
+            height: 65px;
             border-radius: 50%;
-            background-color: #381226;
-            margin: 0 auto 4px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
+            object-position: center 20%;
+            margin: 0 auto 6px auto;
+            display: block;
+            border: 2px solid #ffd700;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+
+        .member-name {
+            font-size: 11px;
+            line-height: 1.3;
+            margin: 0;
             color: #ffd700;
+            font-weight: 500;
+        }
+
+        .member-surname {
             font-size: 10px;
-            border: 2px dashed #ffd700;
+            color: #e6c687;
+            margin: 1px 0 0 0;
         }
 
         .event-item {
@@ -277,30 +286,24 @@
 </head>
 <body>
 
-    <!-- Splash Screen -->
     <div id="splash-screen">
         <img src="logo.jpg" alt="Ganesha Logo" class="splash-logo">
         <div class="splash-title">మహా గణపతి భక్త బృందం</div>
     </div>
 
-    <!-- Main Website Content -->
     <div id="main-content">
         <div class="container">
-            <!-- Top Logo -->
             <img src="logo.jpg" alt="Ganesha Logo" class="logo">
 
-            <!-- Team Names -->
             <div class="telugu-title">మహా గణపతి భక్త బృందం</div>
             <div class="english-title">MAHA GANAPATHI BHAKTHA BRUNDHAM</div>
 
-            <!-- Welcome Context Box -->
             <div class="welcome-box">
                 <div class="om-symbol">ॐ</div>
                 <h2>Welcome, Devotees</h2>
                 <p>Join us in celebrating the divine arrival of Lord Ganesha with devotion, unity and happiness. Let us come together to seek the blessings of Vighneshwara for peace, prosperity, and joy in our community.</p>
             </div>
 
-            <!-- 1. Location Block -->
             <div class="feature-card">
                 <img src="logo.jpg" alt="Location" class="card-img-preview">
                 <h3>Event Location</h3>
@@ -310,7 +313,6 @@
                 </a>
             </div>
 
-            <!-- 2. Committee Members Block -->
             <div class="feature-card">
                 <img src="logo.jpg" alt="Committee" class="card-img-preview">
                 <h3>Committee</h3>
@@ -320,22 +322,69 @@
                 <div id="committee-content" class="collapsible-content">
                     <div class="committee-grid">
                         <div class="member-card">
-                            <div class="member-photo">Photo 1</div>
-                            <p style="font-size: 11px; margin: 3px 0; color: #ffd700;">Name 1</p>
+                            <img src="1000213532.png" alt="Tarun Chikkala" class="member-photo">
+                            <p class="member-name">Tarun</p>
+                            <p class="member-surname">Chikkala</p>
                         </div>
                         <div class="member-card">
-                            <div class="member-photo">Photo 2</div>
-                            <p style="font-size: 11px; margin: 3px 0; color: #ffd700;">Name 2</p>
+                            <img src="1000215845.jpg" alt="Kiran Kasipeta" class="member-photo">
+                            <p class="member-name">Kiran</p>
+                            <p class="member-surname">Kasipeta</p>
                         </div>
                         <div class="member-card">
-                            <div class="member-photo">Photo 3</div>
-                            <p style="font-size: 11px; margin: 3px 0; color: #ffd700;">Name 3</p>
+                            <img src="1000213542.jpg" alt="Manikanta Gundimeda" class="member-photo">
+                            <p class="member-name">Manikanta</p>
+                            <p class="member-surname">Gundimeda</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000213516.jpg" alt="Vamsi Aduri" class="member-photo">
+                            <p class="member-name">Vamsi</p>
+                            <p class="member-surname">Aduri</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000216215.jpg" alt="Nagaraju Thati" class="member-photo">
+                            <p class="member-name">Nagaraju</p>
+                            <p class="member-surname">Thati</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000147815.jpg" alt="Harsha Golakaram" class="member-photo">
+                            <p class="member-name">Harsha</p>
+                            <p class="member-surname">Golakaram</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000213548.png" alt="Somesh Yalala" class="member-photo">
+                            <p class="member-name">Somesh</p>
+                            <p class="member-surname">Yalala</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000216821.jpg" alt="Venkat Chintham" class="member-photo">
+                            <p class="member-name">Venkat</p>
+                            <p class="member-surname">Chintham</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000213520.png" alt="Satish Vallabhuni" class="member-photo">
+                            <p class="member-name">Satish</p>
+                            <p class="member-surname">Vallabhuni</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000215896.jpg" alt="Subbu Chitikela" class="member-photo">
+                            <p class="member-name">Subbu</p>
+                            <p class="member-surname">Chitikela</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000213513.jpg" alt="Kareem Shaik" class="member-photo">
+                            <p class="member-name">Kareem</p>
+                            <p class="member-surname">Shaik</p>
+                        </div>
+                        <div class="member-card">
+                            <img src="1000219728.jpg" alt="Rohit Narkedamilli" class="member-photo">
+                            <p class="member-name">Rohit</p>
+                            <p class="member-surname">Narkedamilli</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Event Details Block -->
             <div class="feature-card">
                 <img src="logo.jpg" alt="Events" class="card-img-preview">
                 <h3>Event Details</h3>
@@ -366,7 +415,6 @@
                 </div>
             </div>
 
-            <!-- Clean Footer Section (Directly on Background) -->
             <div class="footer-section">
                 <div class="footer-om">ॐ</div>
                 <div class="footer-telugu">గణపతి బప్పా మోరియా</div>
@@ -376,7 +424,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
     <script>
         // Splash Screen Timer
         setTimeout(function() {
